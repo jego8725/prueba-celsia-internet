@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+        <script src="/js/createClient.js" ></script>
+        <title>Crear Cliente</title>
+    </head>
+    <body>
+        <h1>Crear cliente</h1>
+        <div class="container-input">
+            <div class="group-input">
+                <label form="name">Tipo de identificación</label>
+                <select id="type-identification" name="type-identification" required >
+                    <option value="CC">CEDULA</option>
+                    <option value="TI">TARJETA IDENTIDAD</option>
+                    <option value="CE">CEDULA EXTRANJERIA</option>
+                    <option value="RC">REGISTRO CIVIL</option>
+                </select>
+                <span id="type-identification-error" class="error"></span>
+            </div> 
+
+            <div class="group-input">
+                <label form="name">Identificación</label>
+                <input type="text" id="identification" name="identification" pattern="[0-9]{7,10}" required />
+                <span id="identification-error" class="error"></span>
+            </div>
+
+            <div class="group-input">
+                <label form="name">Nombre</label>
+                <input type="text" id="name" name="name" required />
+                <span id="name-error" class="error"></span>
+            </div>
+
+            <div class="group-input">
+                <label form="name">Apellido</label>
+                <input type="text" id="last-name" name="last-name" required />
+                <span id="last-name-error" class="error"></span>
+            </div> 
+
+            <div class="group-input">
+                <label form="name">Fecha de cumpleaños</label>
+                <input type="date" id="birthday" name="birthday" required />
+                <span id="birthday-error" class="error"></span>
+            </div> 
+            
+            <div class="group-input">
+                <label form="name">Celular</label>
+                <input type="text" id="cellphone" name="cellphone" required />
+                <span id="cellphone-error" class="error"></span>
+            </div>
+
+            <div class="group-input">
+                <label form="name">Correo</label>
+                <input type="email" id="email" name="email" required />
+                <span id="email-error" class="error"></span>
+            </div>
+
+            <div class="group-btn">
+                <button id="btn-cancel">Cancelar</button>
+                <button id="btn-save">Guardar</button>
+            </div>
+        </div>
+    </body>
+</html>

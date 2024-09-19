@@ -1,0 +1,29 @@
+{
+  "name": "prueba-celsia-internet",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jego8725/prueba-celsia-internet.git"
+  },
+  "author": "Jeison Gaviria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jego8725/prueba-celsia-internet/issues"
+  },
+  "homepage": "https://github.com/jego8725/prueba-celsia-internet#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.3"
+  }
+}

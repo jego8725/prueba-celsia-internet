@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+        <script src="/js/createService.js" ></script>
+        <title>Crear Servicio</title>
+    </head>
+    <body>
+        <h1>Crear Servicio</h1>
+        <div class="container-input">
+            <div class="group-input">
+                <label form="name">Servicio</label>
+                <select id="service" name="service" required >
+                    <option value="Internet 200 MB">Internet 200 MB</option>
+                    <option value="Internet 400 MB">Internet 400 MB</option>
+                    <option value="Internet 600 MB">Internet 600 MB</option>
+                    <option value="Directv Go">Directv Go</option>
+                    <option value="Paramount+">Paramount+</option>
+                    <option value="Win+">Win+</option>
+                </select>
+                <span id="service-error" class="error"></span>
+            </div> 
+
+            <div class="group-input">
+                <label form="name">Última facturación</label>
+                <input type="date" id="last-facturer" name="last-facturer" required />
+                <span id="last-facturer-error" class="error"></span>
+            </div>
+
+            <div class="group-input">
+                <label form="name">Último pago</label>
+                <input type="number" id="last-pay" name="last-pay" pattern="[0-9]" required />
+                <span id="last-pay-error" class="error"></span>
+            </div>
+
+            <div class="group-btn">
+                <button id="btn-cancel">Cancelar</button>
+                <button id="btn-save">Guardar</button>
+            </div>
+        </div>
+    </body>
+</html>
