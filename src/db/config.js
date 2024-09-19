@@ -1,8 +1,8 @@
 import { Sequelize } from 'sequelize';
 
-const urlConnect = 'mysql://root:root@127.0.0.1:3306/prueba_celsia_internet';
+const urlConnect = process.env.URI_BD;
 const connection = new Sequelize(urlConnect, {
-    logging: true,
+    logging: process.env.ISLOGGIN === 1,
     timezone: '-05:00'
 });
 
